@@ -1,0 +1,114 @@
+.signup-form-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 125px auto;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    min-width: 350px;
+    margin-right: 75px;
+}
+
+.signup-form>fieldset {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-top: 1px solid gray;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-form>fieldset>legend {
+    padding: 20px 15px;
+    color: rgba(110, 112, 114, 1);
+}
+
+.signup-form>input,
+.signup-form>h2,
+.signup-form>h3,
+.signup-form>button {
+    width: 100%;
+}
+
+.signup-form>h2,
+.signup-form>h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+.signup-form>h2 {
+    color: #D32323;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+.signup-form>h3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup-login-link {
+    color: #0073bb;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup-form>p {
+    color: rgba(110, 112, 114, 1);
+    font-size: 12px;
+    padding: 10px 0;
+    align-self: flex-end;
+}
+
+.signup-login-link-lower {
+    color: #0073bb;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup-form>input {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.signup-form>button {
+    background-color: #D32323;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.demo-login {
+    background-color: #0073bb !important;
+    margin-top: 0;
+}
+
+.session-illustration {
+    height: 340px;
+    width: 380px;
+    /* border-radius: 50% 50%; */
+    background: url(../../../../app/assets/signup_illustration.png);
+    background-size: cover;
+    margin-left: 75px;
+}
+
+.session-errors {
+    color: #D32323;
+}

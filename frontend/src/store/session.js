@@ -26,18 +26,19 @@ export const storeCurrentUser = user => {
     else sessionStorage.removeItem("currentUser");
 }
 
-export const login = ({ username, password }) => async dispatch => {
+export const login = ({ email, password }) => async dispatch => {
     const response = await csrfFetch("/api/session", {
         method: "POST",
-        body: JSON.stringify({ username, password })
+        body: JSON.stringify({ email, password })
     });
 
     if (response.ok) {
         const data = await response.json();
         storeCurrentUser(data.user);
         dispatch(setCurrentUser(data.user));
+    } else {
+        throw response;
     }
-
     return response;
 };
 
@@ -65,6 +66,8 @@ export const signup = (user) => async (dispatch) => {
         const data = await response.json();
         storeCurrentUser(data.user);
         dispatch(setCurrentUser(data.user));
+    } else {
+        throw response;
     }
 
     return response;

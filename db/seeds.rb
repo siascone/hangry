@@ -22,4 +22,5 @@ ActiveRecord::Base.transaction do
     diego = User.create!(username: 'didi', email: 'diego@hangry.io', password: 'password')
     taylor = User.create!(username: 'taytay', email: 'taylor@hangry.io', password: 'password')
     disnee = User.create!(username: "diz", email: 'disnee@hangry.io', password: 'password')
+    demo = User.create(username: "Demo-lition", email: 'john.spartain@sapd.io', password: 'threeseashells')
 end 
