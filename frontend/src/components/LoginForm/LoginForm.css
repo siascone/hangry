@@ -10,13 +10,20 @@
 .login-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-form-left {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 350px;
     min-width: 350px;
     margin-right: 75px;
 }
 
-.login-form > fieldset {
+.login-form-left > fieldset {
     display: flex;
     justify-content: center;
     border: none;
@@ -25,32 +32,33 @@
     margin-top: 10px;
 }
 
-.login-form > fieldset > legend {
+.login-form-left > fieldset > legend {
     padding: 20px 15px;
     color: rgba(110, 112, 114, 1);
 }
 
 .login-form > input, 
-.login-form > h2, 
-.login-form > h3, 
-.login-form > button {
+.login-form > button,
+.login-form-left > h2, 
+.login-form-left > h3, 
+.login-form-left > button {
     width: 100%;
 }
 
-.login-form > h2,
-.login-form > h3 {
+.login-form-left > h2,
+.login-form-left > h3 {
     text-align: center;
     margin: 15px;
 }
 
-.login-form > h2 {
+.login-form-left > h2 {
     color: #D32323;
     font-weight: bold;
     font-size: larger;
     margin-bottom: 0;
 }
 
-.login-form > h3 {
+.login-form-left > h3 {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: bold;
@@ -83,7 +91,7 @@
     margin: 10px 0;
 }
 
-.login-form > button {
+.login-form > button, .login-form-left > button {
     background-color: #D32323;
     color: #ffffff;
     font-size: medium;

@@ -5,25 +5,20 @@ import ProfileButton from './ProfileButton';
 import { useEffect, useState } from 'react';
 
 function NavBar() {
-    let [path, setPath] = useState('')
+    let [sessionLinks, setSessionLinks] = useState(<></>);
     let currentUser = useSelector(state => state.session.user);
     let {pathname} = useLocation();
 
     useEffect(() => {
-        setPath(pathname)
-        console.log(pathname)
+        sessionLinks = <div className='navbar-right'></div>
     }, [])
 
-    let sessionLinks;
 
     if (!currentUser) {
         sessionLinks = <div className='navbar-right'>
                         <NavLink className="login-link" to="/login">Log In</NavLink>
                         <NavLink className="signup-link" to="/signup">Sign Up</NavLink>
                        </div>
-    } else if (path === '/login') {
-        console.log(path)
-        sessionLinks = <div className='navbar-right'></div>
     } else {
         sessionLinks = <div className='navbar-right'>
             <ProfileButton user={currentUser} />

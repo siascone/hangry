@@ -15,8 +15,8 @@ function LoginForm() {
 
     const demoLogin = (e) => {
         debugger
-        console.log(e, 'from demoLogin')
         e.preventDefault();
+        e.stopPropagation();
         dispatch(sessionActions.login({
             email: 'john.spartain@sapd.io',
             password: 'threeseashells'
@@ -27,10 +27,10 @@ function LoginForm() {
 
     const handleSubmit = (e) => {
         debugger
-        console.log(e, 'from handleSubmit')
-
         e.preventDefault();
         e.stopPropagation();
+        console.log(e, 'from handleSubmit')
+
         setErrors([]);
         dispatch(sessionActions.login({ email, password }))
             .then((res) => {
@@ -51,7 +51,7 @@ function LoginForm() {
 
     return (
         <div className='login-form-container'>
-            <form onSubmit={handleSubmit} className='login-form'>
+            <div className='login-form-left'>
                 <h2>Login to Hangry?</h2>
                 <h3>New to Hangry? <NavLink to='/signup/' className="login-signup-link">Sign up</NavLink></h3>
                 <button onClick={demoLogin} className='demo-login'>Demo Login</button>
@@ -59,28 +59,31 @@ function LoginForm() {
                 <fieldset>
                     <legend align='center'>OR</legend>
                 </fieldset>
-                <ul className='session-errors'>
-                    {errors.map((error) => <li key={error}>{error}</li>)}
-                </ul>
 
-                <input
-                    type="text"
-                    placeholder="Email"
-                    value={email}
-                    onChange={e => setEmal(e.target.value)}
-                    required
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                    required
-                />
+                <form onSubmit={handleSubmit} className='login-form'>
+                    <ul className='session-errors'>
+                        {errors.map((error) => <li key={error}>{error}</li>)}
+                    </ul>
 
-                <button type="submit">Log In</button>
-                <p>New to Hangry? <NavLink to='/signup/' className="login-signup-link-lower">Sign up</NavLink></p>
-            </form>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        value={email}
+                        onChange={e => setEmal(e.target.value)}
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        required
+                    />
+
+                    <button type="submit">Log In</button>
+                    <p>New to Hangry? <NavLink to='/signup/' className="login-signup-link-lower">Sign up</NavLink></p>
+                </form>
+            </div>
             <div className='session-illustration'>
                 
             </div>
