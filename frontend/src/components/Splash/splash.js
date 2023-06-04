@@ -1,7 +1,9 @@
+import './splash.css'
+
 function Splash() {
     return (
-        <div>
-            Splash page coming soon
+        <div className="splash-main">
+            <p>More page coming soon but user auth works!</p>
         </div>
     )
 }
