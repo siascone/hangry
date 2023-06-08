@@ -10,21 +10,19 @@ function NavBar() {
     let {pathname} = useLocation();
 
     useEffect(() => {
-        sessionLinks = <div className='navbar-right'></div>
-    }, [])
-
-
-    if (!currentUser) {
-        sessionLinks = <div className='navbar-right'>
-                        <NavLink className="login-link" to="/login">Log In</NavLink>
-                        <NavLink className="signup-link" to="/signup">Sign Up</NavLink>
-                       </div>
-    } else {
-        sessionLinks = <div className='navbar-right'>
-            <ProfileButton user={currentUser} />
-        </div>
-    }
-
+        if (!currentUser && pathname === '/') {
+            setSessionLinks(<div className='navbar-right'>
+                <NavLink className="login-link" to="/login">Log In</NavLink>
+                <NavLink className="signup-link" to="/signup">Sign Up</NavLink>
+            </div>)
+        } else if (!currentUser && (pathname === '/signup' || pathname === '/login')) {
+            setSessionLinks(<div className='navbar-right'></div>)
+        } else if (currentUser) {
+            setSessionLinks(<div className='navbar-right'>
+                <ProfileButton user={currentUser} />
+            </div>)
+        }
+    }, [pathname, currentUser])
 
     return (
         <div className='navbar'>

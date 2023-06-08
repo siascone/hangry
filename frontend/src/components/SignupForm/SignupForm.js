@@ -94,12 +94,12 @@ function SignupForm () {
                     />
 
                     <button type="submit">Sign Up</button>
-                    <p>Already on Hangry? <NavLink to='/login/' className="signup-login-link-lower">Sign up</NavLink></p>
+                    <p>Already on Hangry? <NavLink to='/login/' className="signup-login-link-lower">Log in</NavLink></p>
                 </form>
             </div>
             
             <div className='session-illustration'>
-                
+
             </div>
         </div>
     );

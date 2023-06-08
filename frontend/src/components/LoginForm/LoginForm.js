@@ -26,7 +26,6 @@ function LoginForm() {
     }
 
     const handleSubmit = (e) => {
-        debugger
         e.preventDefault();
         e.stopPropagation();
         console.log(e, 'from handleSubmit')
@@ -52,7 +51,7 @@ function LoginForm() {
     return (
         <div className='login-form-container'>
             <div className='login-form-left'>
-                <h2>Login to Hangry?</h2>
+                <h2>Log in to Hangry?</h2>
                 <h3>New to Hangry? <NavLink to='/signup/' className="login-signup-link">Sign up</NavLink></h3>
                 <button onClick={demoLogin} className='demo-login'>Demo Login</button>
 
