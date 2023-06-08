@@ -50,7 +50,7 @@ function SignupForm () {
 
     return (
         <div className='signup-form-container'>
-            <form onSubmit={handleSubmit} className='signup-form'>
+            <div className='signup-form-left'>
                 <h2>Sign Up for Hangry?</h2>
                 <h3>Connect with great local businesses</h3>
                 <button onClick={demoLogin} className='demo-login'>Demo Login</button>
@@ -59,42 +59,47 @@ function SignupForm () {
                     <legend align='center'>OR</legend>
                 </fieldset>
 
-                <ul className='session-errors'>
-                    {
-                        errors.map((error, i) => {
-                            return <li key={i}>{error}</li>
-                        })
-                    }
-                </ul>
+                <form onSubmit={handleSubmit} className='signup-form'>
 
-                <input 
-                    type="text" 
-                    placeholder="Email"
-                    value={email} 
-                    onChange={e => setEmail(e.target.value)}
-                    required
-                />
-            
-                <input
-                    type="text"
-                    placeholder="Username"
-                    value={username}
-                    onChange={e => setUsername(e.target.value)}
-                    required
-                />
-            
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                    required
-                />
+                    <ul className='session-errors'>
+                        {
+                            errors.map((error, i) => {
+                                return <li key={i}>{error}</li>
+                            })
+                        }
+                    </ul>
 
-                <button type="submit">Sign Up</button>
-                <p>Already on Hangry? <NavLink to='/login/' className="signup-login-link-lower">Sign up</NavLink></p>
-            </form>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                        required
+                    />
+
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        value={username}
+                        onChange={e => setUsername(e.target.value)}
+                        required
+                    />
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        required
+                    />
+
+                    <button type="submit">Sign Up</button>
+                    <p>Already on Hangry? <NavLink to='/login/' className="signup-login-link-lower">Sign up</NavLink></p>
+                </form>
+            </div>
+            
             <div className='session-illustration'>
+                
             </div>
         </div>
     );

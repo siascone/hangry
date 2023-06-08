@@ -3,7 +3,7 @@ import './splash.css'
 function Splash() {
     return (
         <div className="splash-main">
-            <p>More page coming soon but user auth works!</p>
+            <p>More coming soon but user auth works!</p>
         </div>
     )
 }

@@ -11,12 +11,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%
+}
+
+.signup-form-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 350px;
     min-width: 350px;
     margin-right: 75px;
 }
 
-.signup-form>fieldset {
+.signup-form-left > fieldset {
     display: flex;
     justify-content: center;
     border: none;
@@ -25,32 +32,33 @@
     margin-top: 10px;
 }
 
-.signup-form>fieldset>legend {
+.signup-form-left > fieldset > legend {
     padding: 20px 15px;
     color: rgba(110, 112, 114, 1);
 }
 
-.signup-form>input,
-.signup-form>h2,
-.signup-form>h3,
-.signup-form>button {
+.signup-form > input,
+.signup-form > button,
+.signup-form-left > h2,
+.signup-form-left > h3,
+.signup-form-left > button {
     width: 100%;
 }
 
-.signup-form>h2,
-.signup-form>h3 {
+.signup-form-left > h2,
+.signup-form-left > h3 {
     text-align: center;
     margin: 15px;
 }
 
-.signup-form>h2 {
+.signup-form-left > h2 {
     color: #D32323;
     font-weight: bold;
     font-size: larger;
     margin-bottom: 0;
 }
 
-.signup-form>h3 {
+.signup-form-left > h3 {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: bold;
@@ -63,7 +71,7 @@
     font-weight: 500;
 }
 
-.signup-form>p {
+.signup-form > p {
     color: rgba(110, 112, 114, 1);
     font-size: 12px;
     padding: 10px 0;
@@ -77,13 +85,13 @@
     font-weight: 500;
 }
 
-.signup-form>input {
+.signup-form > input {
     box-sizing: border-box;
     padding: 5px 10px;
     margin: 10px 0;
 }
 
-.signup-form>button {
+.signup-form>button, .signup-form-left > button {
     background-color: #D32323;
     color: #ffffff;
     font-size: medium;
