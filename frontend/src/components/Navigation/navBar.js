@@ -21,6 +21,11 @@ function NavBar() {
             setSessionLinks(<div className='navbar-right'>
                 <ProfileButton user={currentUser} />
             </div>)
+        } else {
+            setSessionLinks(<div className='navbar-right'>
+                <NavLink className="login-link" to="/login">Log In</NavLink>
+                <NavLink className="signup-link" to="/signup">Sign Up</NavLink>
+            </div>)
         }
     }, [pathname, currentUser])
 
