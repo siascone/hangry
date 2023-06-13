@@ -28,15 +28,18 @@ function BusinessShow () {
 
     return (
         <div className="business-show-container">
-            <h1>{name}</h1>
-            <p className="business-description">{description}</p>
-            <p>Type: {businessType}</p>
+            <img src={business.photoUrl} alt="business image" className="business-show-image"/>
+            <div className="business-show-details">
+                <h1>{name}</h1>
+                <p className="business-description">{description}</p>
+                <p>Type: {businessType}</p>
 
-            <h2>Address</h2>
-            <p>{address}</p>
+                <h2>Address</h2>
+                <p>{address}</p>
 
-            <h2>Hours</h2>
-            {formattedHours}
+                <h2>Hours</h2>
+                {formattedHours}
+            </div>
             
         </div>
     )

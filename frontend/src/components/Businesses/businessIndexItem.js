@@ -38,6 +38,7 @@ function BusinessIndexItem ({business}) {
                     {/* {hours} */}
                 </ul>
             </NavLink>
+            <img src={business.photoUrl} alt="business photo" className="business-index-item-image"/>
         </div>
     )
 }

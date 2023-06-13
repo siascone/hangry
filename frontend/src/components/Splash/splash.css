@@ -5,3 +5,16 @@
     justify-content: center;
     height: 70vh;
 }
+
+.businesses-link {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-left: 10px;
+    background-color: #D32323;
+    color: white;
+}

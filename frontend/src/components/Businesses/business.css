@@ -19,7 +19,7 @@
     width: 300px;
     height: 300px;
     margin: 10px;
-    background-color: aqua;
+    background-color: transparent;
     border-radius: 6px;
     padding: 20px;
 }
@@ -29,22 +29,29 @@
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
+    /* padding: 20px; */
+}
+
+.business-show-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
 }
 
-.business-show-container > h1 {
+.business-show-details > h1 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.business-show-container > h2 {
+.business-show-details > h2 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.business-show-container > p {
+.business-show-details > p {
     font-size: 14px;
     color: gray;
     margin-bottom: 10px;
@@ -56,4 +63,20 @@
 
 .business-description {
     width: 300px;
+}
+
+.business-index-item-image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.business-show-image {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    object-fit: cover;
 }
