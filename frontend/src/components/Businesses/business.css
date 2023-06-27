@@ -1,18 +1,22 @@
+.business-index-main {
+    display: flex;
+    margin-top: 106px;
+}
+
 .business-index-container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* justify-content: center;
-    align-items: center; */
-    position: relative;
-    top: 96px;
+    width: 70%;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .business-index-item-container {
     display: flex;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     border-bottom: 1px solid #EBEBEB;
-    min-height: 250px;
+    padding-bottom: 10px;
+    /* min-height: 250px; */
 }
 
 .business-index-item-container {
@@ -23,8 +27,6 @@
     height: 170px;
     width: 170px;
     object-fit: cover;
-    /* position: absolute; */
-    /* z-index: -1; */
     border-radius: 6px;
     margin-right: 20px;
 }
