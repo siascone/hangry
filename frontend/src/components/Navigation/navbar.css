@@ -5,6 +5,17 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(200, 201, 202, 1);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.solid {
+ background-color: white;
+}
+
+.transparent {
+
 }
 
 .navbar-left {

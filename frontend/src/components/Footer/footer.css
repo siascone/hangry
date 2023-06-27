@@ -3,6 +3,8 @@
     flex-direction: column;
     background-color: #f7f7f7;
     padding: 25px;
+    position: relative;
+    bottom: -96px;
 }
 
 .footer-links {

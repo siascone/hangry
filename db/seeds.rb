@@ -33,13 +33,13 @@ amante_coffee = Business.create(
     name: "Amante Coffee", 
     description: "Amante is a Boulder based coffee company that is committed to bringing a wonderful piece of the “Old World” to the front range of Colorado. Amante's beans are custom-roasted in Bra, Italy by the Ghigo family in a classic Northern Italian tradition. The recipes used by their roaster have been in his family for over half a century.",
     hours: { 
-        sun: '1:00pm - 11:00pm',
-        mon: '3:00pm - 11:00pm',
-        tue: '3:00pm - 11:00pm',
-        wed: '3:00pm - 11:00pm',
-        thr: '3:00pm - 11:00pm',
-        fri: '3:00pm - 11:00pm',
-        sat: '1:00pm - 11:00pm'
+        sun: '13:00 - 23:00',
+        mon: '15:00 - 23:00',
+        tue: '15:00 - 23:00',
+        wed: '15:00 - 23:00',
+        thr: '15:00 - 23:00',
+        fri: '15:00 - 23:00',
+        sat: '13:00 - 23:00'
     },
     latitude: 40.01686,
     longitude: -105.28175,
@@ -54,13 +54,13 @@ the_attic = Business.create(
 
     In addition to their fantastic drink specials (we are the self proclaimed “Home of the Fat Albert”), our made-from-scratch food will transform any first-time customer into a regular instantaneously. So come early or come late, as their full menu of “gourmet pub fare” is available until 11pm nightly.",
     hours: { 
-        sun: '1:00pm - 11:00pm',
-        mon: '3:00pm - 11:00pm',
-        tue: '3:00pm - 11:00pm',
-        wed: '3:00pm - 11:00pm',
-        thr: '3:00pm - 11:00pm',
-        fri: '3:00pm - 11:00pm',
-        sat: '1:00pm - 11:00pm'
+        sun: '13:00 - 23:00',
+        mon: '15:00 - 23:00',
+        tue: '15:00 - 23:00',
+        wed: '15:00 - 23:00',
+        thr: '15:00 - 23:00',
+        fri: '15:00 - 23:00',
+        sat: '13:00 - 23:00'
     },
     latitude: 40.01655,
     longitude: -105.28241,
@@ -73,13 +73,13 @@ laughing_goat = Business.create(
     name: "Laughing Goat Coffeehouse", 
     description: "The Laughing Goat is a warm, cheerful place, where we'll make you the best espresso you've ever had. Featuring the award-winning coffees of the Kaladi Brothers Coffee from Denver. Unique, artistic decor marrying old world coffeehouse feel with contemporary design providing a warm, elegant, inviting atmosphere. Weekly poetry readings, monthly art shows, and weekend music.",
     hours: { 
-        sun: '7:00am - 8:00pm',
-        mon: '6:30am - 8:00pm',
-        tue: '6:30am - 8:00pm',
-        wed: '6:30am - 8:00pm',
-        thr: '6:30am - 8:00pm',
-        fri: '6:30am - 8:00pm',
-        sat: '7:00am - 8:00pm'
+        sun: '07:00 - 20:00',
+        mon: '06:30 - 20:00',
+        tue: '06:30 - 20:00',
+        wed: '06:30 - 20:00',
+        thr: '06:30 - 20:00',
+        fri: '06:30 - 20:00',
+        sat: '07:00 - 20:00'
     },
     latitude: 40.01950,
     longitude: -105.27310,
@@ -92,13 +92,13 @@ dragonfly_noodle = Business.create(
     name: "Dragonfly Noodle", 
     description: "Dragonfly Noodle focuses on creating dishes that are deeply rooted in their Pacific Rim origins with modern and creative twists. Sister restaurant to the legendary Zoe MaMa.",
     hours: { 
-        sun: '11:30am - 9:00pm',
-        mon: '11:30am - 9:00pm',
-        tue: '11:30am - 9:00pm',
-        wed: '11:30am - 9:00pm',
-        thr: '11:30am - 9:30pm',
-        fri: '11:30am - 9:30pm',
-        sat: '11:30am - 9:00pm'
+        sun: '11:30 - 21:00',
+        mon: '11:30 - 21:00',
+        tue: '11:30 - 21:00',
+        wed: '11:30 - 21:00',
+        thr: '11:30 - 21:30',
+        fri: '11:30 - 21:30',
+        sat: '11:30 - 21:00'
     },
     latitude: 40.01774,
     longitude: -105.28241,
@@ -111,13 +111,13 @@ gelato_boy = Business.create(
     name: "Gelato Boy", 
     description: "That's really it. There are no secrets. We make our gelato from scratch and we use the best ingredients – organic and in-season whenever possible – to make sure that our gelato is the best it can possibly be. Gelato will never taste better than when it has just been spun so we make it fresh every day. Can an excellent gelato change your life? We'd like to think so. It will at least change your day.",
     hours: { 
-        sun: '11:00am - 10:00pm',
-        mon: '11:00am - 10:00pm',
-        tue: '11:00am - 10:00pm',
-        wed: '11:00am - 10:00pm',
-        thr: '11:00am - 10:00pm',
-        fri: '11:00am - 11:00pm',
-        sat: '11:00am - 11:00pm'
+        sun: '11:00 - 22:00',
+        mon: '11:00 - 22:00',
+        tue: '11:00 - 22:00',
+        wed: '11:00 - 22:00',
+        thr: '11:00 - 22:00',
+        fri: '11:00 - 23:00',
+        sat: '11:00 - 23:00'
     },
     latitude: 40.01879,
     longitude: -105.27648,
@@ -130,13 +130,13 @@ sundown_saloon = Business.create(
     name: "Sundown Saloon", 
     description: "For over 30 years Boulder's premier dive bar. PBR, Whiskey, Craft Beer, Pool, Darts, Shuffleboard, Foosball, interesting people, and our interesting smell.",
     hours: { 
-        sun: '3:00pm - 2:00am',
-        mon: '3:00pm - 2:00am',
-        tue: '3:00pm - 2:00am',
-        wed: '3:00pm - 2:00am',
-        thr: '3:00pm - 2:00am',
-        fri: '3:00pm - 2:00am',
-        sat: '3:00pm - 2:00am'
+        sun: '15:00 - 23:00',
+        mon: '15:00 - 23:00',
+        tue: '15:00 - 23:00',
+        wed: '15:00 - 23:00',
+        thr: '15:00 - 23:00',
+        fri: '15:00 - 23:00',
+        sat: '15:00 - 23:00'
     },
     latitude: 40.01739,
     longitude: -105.28008,
@@ -151,13 +151,13 @@ piece_love_chocolate = Business.create(
 
     We are located at the West End of historical downtown Boulder, Colorado’s most famous thoroughfare, 805 Pearl Street, one block west of 9th Street. Pause for a moment when you pass through our door and take in the sights, sounds and smells of our sumptuous chocolate boutique. Come celebrate and share with us our adoration of chocolate with cocoa products from bean to bar to love itself!",
     hours: { 
-        sun: '9:00am - 9:00pm',
-        mon: '9:00am - 6:00pm',
-        tue: '9:00am - 6:00pm',
-        wed: '9:00am - 9:00pm',
-        thr: '9:00am - 9:00pm',
-        fri: '9:00am - 9:00pm',
-        sat: '9:00am - 9:00pm'
+        sun: '09:00 - 21:00',
+        mon: '09:00 - 18:00',
+        tue: '09:00 - 18:00',
+        wed: '09:00 - 21:00',
+        thr: '09:00 - 21:00',
+        fri: '09:00 - 21:00',
+        sat: '09:00 - 21:00'
     },
     latitude: 40.01712,
     longitude: -105.28481,
@@ -170,13 +170,13 @@ mtn_sun_pub = Business.create(
     name: "Mountain Sun Pub & Brewery", 
     description: "At Mountain Sun our mission is to offer five-star service, fresh, high quality pub fare and finely crafted brews for affordable prices in an environment that’s comfortable like your living room. There will never be televisions at our pubs because we want our guests to meet and discuss the world in which we live or simply to play Scrabble. ",
     hours: { 
-        sun: '11:00am - 10:00pm',
-        mon: '12:00pm - 10:00pm',
-        tue: '12:00pm - 10:00pm',
-        wed: '12:00pm - 10:00pm',
-        thr: '12:00pm - 10:00pm',
-        fri: '11:00am - 10:00pm',
-        sat: '11:00am - 10:00pm'
+        sun: '11:00 - 22:00',
+        mon: '12:00 - 22:00',
+        tue: '12:00 - 22:00',
+        wed: '12:00 - 22:00',
+        thr: '12:00 - 22:00',
+        fri: '11:00 - 22:00',
+        sat: '11:00 - 22:00'
     },
     latitude: 40.01901,
     longitude: -105.27521,
@@ -189,13 +189,13 @@ lolitas = Business.create(
     name: "Lolita's Market & Deli", 
     description: "Located in one of Boulder's most historic buildings, Lolita’s is downtown’s only full-service Market & Deli. This Pearl Street gem offers a large selection of everyday necessities and groceries as well as enough drinks and snacks to power your front range adventures. Open 6 am - 1 am daily.",
     hours: { 
-        sun: '6:00am - 1:00am',
-        mon: '6:00am - 1:00am',
-        tue: '6:00am - 1:00am',
-        wed: '6:00am - 1:00am',
-        thr: '6:00am - 1:00am',
-        fri: '6:00am - 1:00am',
-        sat: '6:00am - 1:00am'
+        sun: '06:00 - 23:00',
+        mon: '06:00 - 23:00',
+        tue: '06:00 - 23:00',
+        wed: '06:00 - 23:00',
+        thr: '06:00 - 23:00',
+        fri: '06:00 - 23:00',
+        sat: '06:00 - 23:00'
     },
     latitude: 40.01665,
     longitude: -105.28492,
@@ -210,13 +210,13 @@ the_kitchen = Business.create(
 
     Head Upstairs to their cocktail lounge to enjoy the same imaginative array of globally-inspired shared plates and killer drinks in a stylish, casual space.",
     hours: { 
-        sun: '10:00am - 10:00pm',
-        mon: '11:00am - 10:00pm',
-        tue: '11:00am - 10:00pm',
-        wed: '11:00am - 10:00pm',
-        thr: '11:00am - 10:00pm',
-        fri: '11:00am - 11:00pm',
-        sat: '10:00am - 11:00pm'
+        sun: '10:00 - 22:00',
+        mon: '11:00 - 22:00',
+        tue: '11:00 - 22:00',
+        wed: '11:00 - 22:00',
+        thr: '11:00 - 22:00',
+        fri: '11:00 - 23:00',
+        sat: '10:00 - 23:00'
     },
     latitude: 40.01781,
     longitude: -105.28176,

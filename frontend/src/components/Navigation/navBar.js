@@ -8,6 +8,7 @@ function NavBar() {
     let [sessionLinks, setSessionLinks] = useState(<></>);
     let currentUser = useSelector(state => state.session.user);
     let {pathname} = useLocation();
+    let [solid, setSolid] = useState(false);
 
     useEffect(() => {
         if (!currentUser && pathname === '/') {
@@ -27,10 +28,14 @@ function NavBar() {
                 <NavLink className="signup-link" to="/signup">Sign Up</NavLink>
             </div>)
         }
+
+        if (pathname != '/') {
+            setSolid(true)
+        }
     }, [pathname, currentUser])
 
     return (
-        <div className='navbar'>
+        <div className={`navbar ${solid ? 'solid' : 'transparent'}`}>
             <div className='navbar-left'>
                 <NavLink to="/" className="home-link">hangry?<div className='icon'></div></NavLink>
             </div>

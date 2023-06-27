@@ -1,35 +1,85 @@
 .business-index-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
+    top: 96px;
 }
 
 .business-index-item-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid #EBEBEB;
+    min-height: 250px;
+}
+
+.business-index-item-container {
+    text-decoration: none;
+}
+
+.business-index-item-image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    /* position: absolute; */
+    /* z-index: -1; */
+    border-radius: 6px;
+    margin-right: 20px;
 }
 
 .business-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    background-color: transparent;
+    text-decoration: none;
+    color: #2D2E2F;
     border-radius: 6px;
-    padding: 20px;
+}
+
+.business-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.business-type-list {
+    margin-top: 10px;
+    display: flex;
+}
+
+.business-type-list > p {
+    background-color: #F0F0F0;
+    padding: 2px;
+    border-radius: 5px;
+    color: #6E7072;
+    font-weight: bold;
+}
+
+.closing-hour {
+    margin-top: 10px;
+}
+
+.is-open, .is-closed {
+    font-weight: bold;
+}
+
+.is-open {
+    color: green;
+}
+
+.is-closed {
+    color: red;
+}
+
+.business-description-index {
+    margin-top: 10px;
+    color: rgba(110, 112, 114, 1)
 }
 
 .business-show-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* padding: 20px; */
 }
 
 .business-show-details {
@@ -63,15 +113,6 @@
 
 .business-description {
     width: 300px;
-}
-
-.business-index-item-image {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    border-radius: 6px;
 }
 
 .business-show-image {
