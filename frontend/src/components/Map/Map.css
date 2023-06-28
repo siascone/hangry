@@ -1,6 +1,6 @@
 .map-container {
     width: 30%;
-    height: 100vh;
+    height: calc(100vh - 96px);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
