@@ -11,4 +11,7 @@
     right: 0;
     top: 96px; */
     border: 1px solid gray;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
