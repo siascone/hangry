@@ -38,11 +38,12 @@ function Map ({
                 const marker = new window.google.maps.Marker({
                     map,
                     position: new window.google.maps.LatLng(business.latitude, business.longitude),
-                    // label: {
+                    // title: {
                     //     text: `${business.name}`,
                     //     fontWeight: 'bold',
                     //     color: 'black'
                     // }
+                    title: `${business.name}`
     
                 })
     
