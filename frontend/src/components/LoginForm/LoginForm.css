@@ -105,9 +105,14 @@
     margin-top: 20px;
 }
 
+.login-form > button {
+    cursor: pointer;
+}
+
 .demo-login {
     background-color: #0073bb !important;
     margin-top: 0;
+    cursor: pointer;
 }
 
 .session-illustration {
