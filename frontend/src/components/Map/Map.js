@@ -84,7 +84,6 @@ function Map ({
 }
 
 function MapWrapper(props) {
-    console.log("key", process.env)
     return (
         <Wrapper apiKey={process.env.REACT_APP_MAPS_API_KEY}>
             <Map { ...props} />
